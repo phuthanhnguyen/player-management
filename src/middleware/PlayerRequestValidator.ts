@@ -5,8 +5,8 @@ import type { IPlayer } from '../models/Player';
 import Logging from '../utils/Logger';
 
 /**
- *
- * @param schema Validate body of the request.
+ * Validate body of the request.
+ * @param schema 
  */
 export const playerValidate = (schema: ObjectSchema) => {
   return async (req: Request, res: Response, next: NextFunction) => {

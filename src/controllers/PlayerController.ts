@@ -74,7 +74,7 @@ const deletePlayer = (req: Request, res: Response) => {
         return res.status(200).json({ message: `Player with id [${playerIdOrNickname}] deleted!` });
       } else {
         return res.status(404).json({
-          message: `Player with id [${playerIdOrNickname}] not found!`
+          message: `Player with id or nickname [${playerIdOrNickname}] not found!`
         });
       }
     })
